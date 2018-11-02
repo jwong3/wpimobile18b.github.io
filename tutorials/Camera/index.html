@@ -88,7 +88,7 @@
 <li>This call creates the intent object with the specific intent being to capture an image</li>
 </ul>
 </li>
-<li><code>List&lt;ResolveInfo&gt; activities = packageManager.queryIntentActivities(takePictureIntent, 0);</code><ul>
+<li><code>List&lt;ResolveInfo&gt; activities = getPackageManager().queryIntentActivities(takePictureIntent, 0);</code><ul>
 <li>This call checks if our implicit intent can be resolved.</li>
 <li>We should only start the activity if the returned list has more than one matches.</li>
 <li>By passing a flag of 0, we are ignoring all other defined constants for PackageManager.</li>
